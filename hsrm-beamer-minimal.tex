@@ -206,7 +206,7 @@ Many similar systems have been proposed in the past:
 	\vspace{-10pt}
 	\begin{block}{Functionality of Readability Evaluator}
 		\begin{enumerate}
-			\item We extract a set of 25 features that are related to readability (e.g. avg identifier length, avg number of comments, etc.
+			\item We extract a set of 25 features that are related to readability (e.g. avg identifier length, avg number of comments, etc.)
 			\item We build a binary classifier using AdaBoost and decision trees. The training was done on a publicly available dataset.
 			\item We evaluate the readability of new snippets using our trained model with 85\% F-Measure score.
 		\end{enumerate}
@@ -366,7 +366,7 @@ The purpose of our evaluation is:
 \begin{itemize}
 
 	\item To assess whether the snippets of our snippets are relevant.
-	\item To determine whether the developer can indeed more easily find snippets for all different APIs relevant to a query.
+	\item To determine whether the developer can find more easily snippets for all different APIs relevant to a query.
 	
 \end{itemize}
 
@@ -377,25 +377,20 @@ We perform reusability-related evaluation against Google search engine on a data
 \begin{table}
 \centering
 \tiny
-\begin{tabular}{ c l c c c c }
+\begin{tabular}{ c l c c c }
 \hline
-\textbf{Index} & \textbf{Query} & \textbf{Clusters} & \textbf{Snippets} & \textbf{Snippets/Cluster}\\
+\textbf{ID} & \textbf{Query} & \textbf{Clusters} & \textbf{Snippets}\\
 \hline
-1 & How to read CSV file & 3 & 44 & 14.7\\
-2 & How to generate MD5 hash code & 4 & 43 & 10.8\\
-3 & How to upload file to FTP & 3 & 13 & 4.3\\
-4 & How to split string & 5 & 53 & 10.6\\
-5 & How to draw text graphics & 3 & 40 & 13.3\\
-6 & How to play audio file & 5 & 79 & 15.8\\
-7 & How to substitute string & 3 & 31 & 10.3\\
-8 & How to convert collection to an array & 4 & 49 & 12.3\\
-9 & How to send email & 3 & 46 & 15.3\\
-10& How to connect to a JDBC database & 5 & 44 & 8.8\\
-11& How to execute select statement JDBC database & 3 & 59 & 19.7\\
-12& How to initialize thread & 3 & 33 & 11.0\\
-13& How to write binary data & 3 & 35 & 11.7\\
-14& How to read ZIP archive & 2 & 32 & 16.0\\
-15& How to send packet via UDP & 2 & 31 & 15.5\\
+1 & How to read CSV file & 5 & 76\\
+2 & How to generate MD5 hash code & 5 & 65\\
+3 & How to upload file to FTP & 4 & 31\\
+4 & How to split string & 4 & 22\\
+5 & How to play audio file & 6 & 45\\
+6 & How to send email & 5 & 79\\
+7 & How to connect to a JDBC database & 5 & 42\\
+8 & How to initialize thread & 6 & 51\\
+9 & How to read ZIP archive & 6 & 82\\
+10& How to send packet via UDP & 5 & 34\\
 \hline
 \end{tabular}
 \end{table}
@@ -418,7 +413,7 @@ We perform reusability-related evaluation against Google search engine on a data
 \item  We consider that the user examines the results subsequently (i.e. as a list of results) for both systems.
 
 \pause
-\item For further the assessment of each cluster, we annotate the results to consider them relevant for each implementation.
+\item For further assessment of each cluster, we annotate the results to consider them relevant for each implementation.
 
 \pause
 \item We use {\Medium reciprocal rank} as a metric for comparison.
